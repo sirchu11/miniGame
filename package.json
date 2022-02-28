@@ -1,11 +1,12 @@
 {
-  "name": "H5-MiniGame-Lobby",
+  "name": "MiniGame-Lobby",
   "version": "1.0.0",
   "repository": "",
   "license": "MIT",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "docker": "export NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server --config webpack.config.js --mode=development",
-    "start": "webpack-dev-server --config webpack.config.js --mode=development",
+    "start": "webpack-dev-server --config webpack.config.js --mode=development --openssl-legacy-provider",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "gamelint": "tslint -c tslint.json games/**/*.ts"
   },
