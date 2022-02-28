@@ -1,0 +1,33 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+ }
+html, body, iframe { height: 100%; }
+html {
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: Noto Sans, Segoe UI, Arial, sans-serif;
+    font-weight: 400;
+    color: #b59663;
+    touch-action: pan-y;
+    width: 100%;
+    overscroll-behavior-y: contain;
+    margin: 0;
+    background-color: #000 !important;
+    overflow: hidden;
+    position: relative;
+}
+div#stats {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 500;
+    width: max(200px, 10vw, 10vh);
+    height: max(120px, 6vh, 6vw);
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+  }
+div#stats canvas { 
+    position: absolute; 
+}

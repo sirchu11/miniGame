@@ -1,0 +1,40 @@
+{
+  "name": "H5-MiniGame-Lobby",
+  "version": "1.0.0",
+  "repository": "",
+  "license": "MIT",
+  "scripts": {
+    "docker": "export NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server --config webpack.config.js --mode=development",
+    "start": "webpack-dev-server --config webpack.config.js --mode=development",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "gamelint": "tslint -c tslint.json games/**/*.ts"
+  },
+  "dependencies": {
+    "@jacekpietal/gstats": "^0.1.0",
+    "@pixi/tilemap": "3.2.2",
+    "@types/lodash": "^4.14.171",
+    "@types/string-format": "^2.0.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "gh-pages": "^3.2.3",
+    "gsap": "^3.7.1",
+    "howler": "^2.2.3",
+    "lodash": "^4.17.21",
+    "pixi-spine": "^3.0.13",
+    "pixi-viewport": "4.34.1",
+    "pixi.js": "6.2.0",
+    "string-format": "^2.0.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@types/node": "^16.4.4",
+    "file-loader": "^6.2.0",
+    "get-host": "^1.0.4",
+    "html-webpack-plugin": "4.3.0",
+    "ts-loader": "7.0.5",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "^3.11.2",
+    "webpackbar": "^5.0.0-3"
+  }
+}

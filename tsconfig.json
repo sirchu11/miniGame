@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "sourceMap": true,
+        "allowJs": true,
+        "outDir": "./dist",
+        "removeComments": false,
+        "resolveJsonModule": true,
+        "target": "es6",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "importHelpers": true,
+        "esModuleInterop": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "@src/*": [
+                "./src/*"
+            ],
+            "@games/*": [
+                "./games/*"
+            ],
+            "@base/*": [
+                "./base/*"
+            ]
+        }
+    },
+    "include": [
+        "src",
+        "games",
+        "base"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
